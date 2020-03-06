@@ -11,6 +11,12 @@ var sanitizer = require('sanitizer');
 var aes256 = require('./aes256');
 const serv = express().Router();
 
+serv.get('/',  async function(req, res) {
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.write('<h1>Hello from Express.js!</h1>');
+  res.end();
+}
+         
 serv.post('/',  async function(req, res) {
 		body = req.body;
 		var key1 = '%%%InnovanTech%%%hfuhfzeuhehufzeifHUZIUIUAZEGHDRuazsjdczhfzejifjdibhufihezioxdjfusbutfdzae1454rt56aert4aert4aez4rta6traeaertaer%%%InnovanTech%%%';
