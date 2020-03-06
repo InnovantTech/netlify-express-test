@@ -5,11 +5,11 @@ const serverless = require('serverless-http');
 const app = express();
 const bodyParser = require('body-parser');
 
-const puppeteer = require('puppeteer');
-var mysql = require('mysql2/promise');
-var sanitizer = require('sanitizer');
-var aes256 = require('./aes256');
-const serv = express().Router();
+#const puppeteer = require('puppeteer');
+#var mysql = require('mysql2/promise');
+#var sanitizer = require('sanitizer');
+#var aes256 = require('./aes256');
+#const serv = express().Router();
 
 serv.get('/',  async function(req, res) {
   res.writeHead(200, { 'Content-Type': 'text/html' });
